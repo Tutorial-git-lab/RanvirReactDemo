@@ -18,7 +18,7 @@ const Register = ({ onLogin }) => {
   };
   return (
     <>
-      <div className="container my-3 border">
+      <div className="container my-3">
         <div className="row">
           <div className="col-12 d-flex-col">
             <div className="d-flex align-item-center justify-content-center w-100 vh-40 bg-silver ">

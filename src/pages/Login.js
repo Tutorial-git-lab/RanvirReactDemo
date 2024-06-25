@@ -8,17 +8,17 @@ const Login = ({ onLogin }) => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    // Add your login logic here
-    // if (userId === "admin@gmail.com") nav("/Adminpage");
-    // else if (userId === "company@gmail.com") nav("/CompanyLogin");
-    // else if (userId === "jobseeker@gmail.com") nav("/JobSeekerLogin");
+    //Add your login logic here
+    if (userId === "admin@gmail.com") nav("/Adminpage");
+    else if (userId === "company@gmail.com") nav("/CompanyLogin");
+    else if (userId === "jobseeker@gmail.com") nav("/JobseekerLayout ");
   };
   return (
     <>
-      <div className="container my-3 border">
+      <div className="container my-3">
         <div className="row">
           <div className="col-12 d-flex-col">
-            <div className="d-flex align-item-center justify-content-center w-100 vh-40 bg-silver border ">
+            <div className="d-flex align-item-center justify-content-center w-100 vh-40 bg-silver">
               <div className="form_container p-5 rounded bg-dark text-white w-40 my-1">
                 <form onSubmit={handleLogin}>
                   <div className="form-group mb-2 ">
