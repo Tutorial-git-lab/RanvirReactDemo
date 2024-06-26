@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -30,13 +30,15 @@ import AppliedJob from "./pages/AppliedJob";
 import JobSeekerReport from "./pages/JobSeekerReport";
 import CompanyReport from "./pages/CompanyReport";
 import FeedBackReport from "./pages/FeedBackReport";
+import JobSeekerRegistration from "./pages/JobSeekerRegister";
+import CompanyRegister from "./pages/CompanyRegister";
 
 export default function App() {
   return (
     <>
       <div className="container-fluid p-3">
         <BrowserRouter>
-          <div className="container-fluid border my-2">
+          <div className="container-fluid  my-2">
             <div className="row">
               <div className="col-4 d-flex-col">
                 <Header />
@@ -90,10 +92,17 @@ export default function App() {
                 <Route path="sent" element={<Sent />} />
                 <Route path="logout" element={<Logout />} />
               </Route>
+
+              <Route
+                path="jobseeekerregister"
+                element={<JobSeekerRegistration />}
+              ></Route>
+              <Route
+                path="companyRegister"
+                element={<CompanyRegister />}
+              ></Route>
             </Routes>
           </div>
-
-          <div className="container border"></div>
         </BrowserRouter>
       </div>
     </>

@@ -17,34 +17,34 @@ const Layout = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto  mb-lg-0  ">
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink className="nav-link" to="/">
                     <strong>Home</strong>
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink className="nav-link" to="/about">
                     <strong> About Us</strong>
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink className="nav-link" to="/services">
                     <strong>Services</strong>
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink className="nav-link" to="/career">
                     <strong>Career</strong>
                   </NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink className="nav-link" to="/contact">
                     <strong>Contact</strong>
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink
                     className="nav-link"
                     data-bs-toggle="modal"
@@ -54,7 +54,7 @@ const Layout = () => {
                     <strong>Login</strong>
                   </NavLink>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item p-3">
                   <NavLink
                     className="nav-link"
                     data-bs-toggle="modal"

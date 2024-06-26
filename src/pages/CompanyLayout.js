@@ -12,7 +12,7 @@ import { useState } from "react";
 import MyAccount from "./MyAccount";
 
 const CompanyLayout = () => {
-  const [activeKey, setActiveKey] = useState("myPostedJob");
+  const [activeKey, setActiveKey] = useState("postedjob");
 
   const renderComponent = () => {
     switch (activeKey) {
@@ -62,24 +62,24 @@ const CompanyLayout = () => {
     //   <>
     <>
       <div>
-        <div className="container-fluid border p-3">
+        <div className="container-fluid  p-3">
           <div className="row">
             <div className="container align-item-center justify-content-center w-80 vh-80">
               <div className="row">
                 <div className="col-3 d-flex-col bg-white">
-                  <div className="text-center border">
+                  <div className="text-center ">
                     <h6>Welcome</h6>
                     <h6>Shivansh Solutions</h6>
                   </div>
 
-                  <div className="my-3 border">
-                    <div className="text-center my-2 border">
+                  <div className="my-3 ">
+                    <div className="text-center my-2 ">
                       <a href="#" onClick={() => setActiveKey("findcandidate")}>
                         Find Candidates
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2 border ${
+                      className={`text-center my-2  ${
                         activeKey === "postnewjob" ? "bg-warning" : ""
                       }`}
                     >
@@ -88,7 +88,7 @@ const CompanyLayout = () => {
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2 border ${
+                      className={`text-center my-2  ${
                         activeKey === "postedjob" ? "bg-warning" : ""
                       }`}
                     >
@@ -96,7 +96,7 @@ const CompanyLayout = () => {
                         Posted Jobs
                       </a>
                     </div>
-                    <div className="text-center my-2 border">
+                    <div className="text-center my-2 ">
                       <a
                         href="#"
                         onClick={() => setActiveKey("companyaccount")}
@@ -104,17 +104,17 @@ const CompanyLayout = () => {
                         My Account
                       </a>
                     </div>
-                    <div className=" text-center my-2 border">
+                    <div className=" text-center my-2 ">
                       <a href="#" onClick={() => setActiveKey("profilematch")}>
                         Profile Match
                       </a>
                     </div>
-                    <div className="text-center my-2 border">
+                    <div className="text-center my-2 ">
                       <a href="#" onClick={() => setActiveKey("appliedjob")}>
                         Applied Jobs
                       </a>
                     </div>
-                    <div className="text-center my-2 border">
+                    <div className="text-center my-2 ">
                       <a
                         href="#"
                         onClick={() => setActiveKey("changepassword")}
@@ -124,12 +124,12 @@ const CompanyLayout = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 d-flex-col border">
+                <div className="col-6 d-flex-col ">
                   <div className="row">
-                    <div className="container border">
-                      <h6 className="text-center">
+                    <div className="container mb-1">
+                      <h5 className="text-center">
                         Find Students here within a second!!
-                      </h6>
+                      </h5>
                     </div>
                     <div className="container row">
                       <div className="col-6 d-flex-col my-1">
@@ -179,21 +179,21 @@ const CompanyLayout = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="container border">{renderComponent()}</div>
+                    <div className="container my-1">{renderComponent()}</div>
                   </div>
                 </div>
-                <div className="col-3 d-flex-col bg-white border">
-                  <div className="text-center my-2 border">
+                <div className="col-3 d-flex-col bg-white ">
+                  <div className="text-center my-2 ">
                     <a href="/" onClick={() => setActiveKey("myinbox")}>
                       My Inbox
                     </a>
                   </div>
-                  <div className="text-center my-2 border">
+                  <div className="text-center my-2 ">
                     <a href="#" onClick={() => setActiveKey("sent")}>
                       Sent
                     </a>
                   </div>
-                  <div className="text-center my-2 border">
+                  <div className="text-center my-2 ">
                     <a href="/" onClick={() => setActiveKey("/")}>
                       Log Out
                     </a>

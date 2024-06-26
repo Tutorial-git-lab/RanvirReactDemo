@@ -11,7 +11,7 @@ const Login = ({ onLogin }) => {
     //Add your login logic here
     if (userId === "admin@gmail.com") nav("/Adminpage");
     else if (userId === "company@gmail.com") nav("/CompanyLogin");
-    else if (userId === "jobseeker@gmail.com") nav("/JobseekerLayout ");
+    else if (userId === "jobseeker@gmail.com") nav("/JobseekerLayout");
   };
   return (
     <>

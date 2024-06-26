@@ -54,12 +54,12 @@ const JobseekerLayout = () => {
     // </>
     <>
       <div>
-        <div className="container-fluid p-3 border">
+        <div className="container-fluid p-3 ">
           <div className="row">
             <div className="container align-item-center justify-content-center w-80 vh-80">
               <div className="row">
-                <div className="col-3 d-flex-col bg-white border">
-                  <div className="text-center my-1 border">
+                <div className="col-3 d-flex-col bg-white ">
+                  <div className="text-center my-1 ">
                     <h6>Welcome Anil</h6>
                   </div>
                   <div className="container text-center">
@@ -72,19 +72,27 @@ const JobseekerLayout = () => {
                     />
                   </div>
 
-                  <div className="container row">
-                    <div className="col-8 d-flex-col">
-                      <input type="file" />
-                    </div>
-                    <div className="col-4 d-flex-col">
-                      <button type="Submit" className="btn btn-secondary">
+                  <div className="container-fluid">
+                    <div class="input-group">
+                      <input
+                        type="file"
+                        className="form-control"
+                        id="inputGroupFile04"
+                        aria-describedby="inputGroupFileAddon04"
+                        aria-label="Upload"
+                      />
+                      <button
+                        className="btn btn-outline-secondary"
+                        type="button"
+                        id="inputGroupFileAddon04"
+                      >
                         Upload
                       </button>
                     </div>
                   </div>
-                  <div className="my-1 border">
+                  <div className="my-1 ">
                     <div
-                      className={`text-center my-2 border ${
+                      className={`text-center my-2  ${
                         activeKey === "myAccount" ? "bg-info" : ""
                       }`}
                     >
@@ -93,7 +101,7 @@ const JobseekerLayout = () => {
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2 border ${
+                      className={`text-center my-2  ${
                         activeKey === "jobseekeraccount" ? "bg-warning" : ""
                       }`}
                     >
@@ -104,19 +112,19 @@ const JobseekerLayout = () => {
                         My Account
                       </a>
                     </div>
-                    <div className="text-center my-2 border">
+                    <div className="text-center my-2 ">
                       <a href="#" onClick={() => setActiveKey("jobmatch")}>
                         Job Matches
                       </a>
                     </div>
-                    <div className="text-center my-2 border">
+                    <div className="text-center my-2 ">
                       <a href="#" onClick={() => setActiveKey("appliedjob")}>
                         Applied Job
                       </a>
                     </div>
 
                     <div
-                      className={`text-center my-2 border ${
+                      className={`text-center my-2  ${
                         activeKey === "changepassword" ? "bg-warning" : ""
                       }`}
                     >
@@ -129,9 +137,9 @@ const JobseekerLayout = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6 d-flex-col border">
+                <div className="col-6 d-flex-col ">
                   <div className="row">
-                    <div className="container border">
+                    <div className="container ">
                       <h6 className="text-center my-3">
                         Find Job here within a second!!
                       </h6>
@@ -181,21 +189,21 @@ const JobseekerLayout = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="container border">{renderComponent()}</div>
+                    <div className="container ">{renderComponent()}</div>
                   </div>
                 </div>
-                <div className="col-3 d-flex-col bg-white border">
-                  <div className="text-center my-2 border">
+                <div className="col-3 d-flex-col bg-white ">
+                  <div className="text-center my-2 ">
                     <a href="#" onClick={() => setActiveKey("myinbox")}>
                       My Inbox
                     </a>
                   </div>
-                  <div className="text-center my-2 border">
+                  <div className="text-center my-2 ">
                     <a href="#" onClick={() => setActiveKey("sent")}>
                       My Sent
                     </a>
                   </div>
-                  <div className="text-center my-2 border">
+                  <div className="text-center my-2 ">
                     <a href="/" onClick={() => setActiveKey("/")}>
                       Log Out
                     </a>
