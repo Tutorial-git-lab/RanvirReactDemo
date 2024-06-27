@@ -73,13 +73,13 @@ const CompanyLayout = () => {
                   </div>
 
                   <div className="my-3 ">
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("findcandidate")}>
                         Find Candidates
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2  ${
+                      className={`text-left ms-5  my-2  ${
                         activeKey === "postnewjob" ? "bg-warning" : ""
                       }`}
                     >
@@ -88,7 +88,7 @@ const CompanyLayout = () => {
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2 mx-5  ${
+                      className={`text-left ms-5 my-2 mx-5  ${
                         activeKey === "postedjob" ? "bg-warning " : ""
                       }`}
                     >
@@ -96,7 +96,7 @@ const CompanyLayout = () => {
                         Posted Jobs
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a
                         href="#"
                         onClick={() => setActiveKey("companyaccount")}
@@ -104,17 +104,17 @@ const CompanyLayout = () => {
                         My Account
                       </a>
                     </div>
-                    <div className=" text-center my-2 ">
+                    <div className=" text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("profilematch")}>
                         Profile Match
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("appliedjob")}>
                         Applied Jobs
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a
                         href="#"
                         onClick={() => setActiveKey("changepassword")}
@@ -183,17 +183,17 @@ const CompanyLayout = () => {
                   </div>
                 </div>
                 <div className="col-3 d-flex-col bg-white ">
-                  <div className="text-center my-2 ">
+                  <div className="text-left ms-5 my-2 ">
                     <a href="/" onClick={() => setActiveKey("myinbox")}>
                       My Inbox
                     </a>
                   </div>
-                  <div className="text-center my-2 ">
+                  <div className="text-left ms-5 my-2 ">
                     <a href="#" onClick={() => setActiveKey("sent")}>
                       Sent
                     </a>
                   </div>
-                  <div className="text-center my-2 ">
+                  <div className="text-left ms-5 my-2 ">
                     <a href="/" onClick={() => setActiveKey("/")}>
                       Log Out
                     </a>

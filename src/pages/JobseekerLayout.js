@@ -92,7 +92,7 @@ const JobseekerLayout = () => {
                   </div>
                   <div className="my-1 ">
                     <div
-                      className={`text-center my-2  ${
+                      className={`text-left ms-5 my-2  ${
                         activeKey === "myAccount" ? "bg-info" : ""
                       }`}
                     >
@@ -101,7 +101,7 @@ const JobseekerLayout = () => {
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2  ${
+                      className={`text-left ms-5 my-2  ${
                         activeKey === "jobseekeraccount" ? "bg-warning" : ""
                       }`}
                     >
@@ -112,19 +112,19 @@ const JobseekerLayout = () => {
                         My Account
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("jobmatch")}>
                         Job Matches
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("appliedjob")}>
                         Applied Job
                       </a>
                     </div>
 
                     <div
-                      className={`text-center my-2 mx-5 ${
+                      className={`text-left ms-5 my-2 mx-5 ${
                         activeKey === "changepassword" ? "bg-warning" : ""
                       }`}
                     >
@@ -193,17 +193,17 @@ const JobseekerLayout = () => {
                   </div>
                 </div>
                 <div className="col-3 d-flex-col bg-white ">
-                  <div className="text-center my-2 ">
+                  <div className="text-left ms-5 my-2 ">
                     <a href="#" onClick={() => setActiveKey("myinbox")}>
                       My Inbox
                     </a>
                   </div>
-                  <div className="text-center my-2 ">
+                  <div className="text-left ms-5 my-2 ">
                     <a href="#" onClick={() => setActiveKey("sent")}>
                       My Sent
                     </a>
                   </div>
-                  <div className="text-center my-2 ">
+                  <div className="text-left ms-5 my-2 ">
                     <a href="/" onClick={() => setActiveKey("/")}>
                       Log Out
                     </a>

@@ -48,15 +48,15 @@ const AdminLayout = () => {
           <div className="row">
             <div className="container align-item-center justify-content-center w-80 vh-80">
               <div className="row">
-                <div className="col-4 d-flex-col bg-white ">
-                  <div className="text-center p-2 ">
+                <div className="col-4 d-flex-col bg-white align-item-left justify-content-left">
+                  <div className="text-left ms-5 p-2 ">
                     <h5>Welcome Admin</h5>
                   </div>
 
                   <div className=" my-2 p-0">
                     <div
-                      className={`text-center my-2 mx-5 ${
-                        activeKey === "jobseekerreport" ? "bg-warning" : ""
+                      className={`text-left ms-5 my-2 ${
+                        activeKey === "jobseekerreport" ? "#" : ""
                       }`}
                     >
                       <a
@@ -66,12 +66,12 @@ const AdminLayout = () => {
                         JobSeeker Report
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("companyreport")}>
                         Company Report
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a
                         href="#"
                         onClick={() => setActiveKey("feedbackreport")}
@@ -79,17 +79,17 @@ const AdminLayout = () => {
                         FeedBack Report
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("assignrole")}>
                         Assign Role
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="#" onClick={() => setActiveKey("changerole")}>
                         Change Role
                       </a>
                     </div>
-                    <div className="text-center my-2 ">
+                    <div className="text-left ms-5 my-2 ">
                       <a href="/" onClick={() => setActiveKey("logout")}>
                         LogOut
                       </a>
