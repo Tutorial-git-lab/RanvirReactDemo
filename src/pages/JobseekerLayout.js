@@ -124,7 +124,7 @@ const JobseekerLayout = () => {
                     </div>
 
                     <div
-                      className={`text-center my-2  ${
+                      className={`text-center my-2 mx-5 ${
                         activeKey === "changepassword" ? "bg-warning" : ""
                       }`}
                     >

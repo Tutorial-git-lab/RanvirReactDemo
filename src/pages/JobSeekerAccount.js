@@ -5,11 +5,11 @@ export default function JobSeekerAccount() {
       <div className="d-flex align-item-center justify-content-center w-90 vh-40 ">
         <div className="form_container rounded bg-white w-90 my-1">
           <div className="row">
-            <div className="d-flex justify-content-center border">
+            <div className="d-flex justify-content-center ">
               <h5 className="text-center mb-2 my-1 ">My Account</h5>
             </div>
 
-            <div className="col-12 d-flex-col p-1 border">
+            <div className="col-12 d-flex-col p-1 ">
               <div className="form-group d-flex mb-2 my-3 row">
                 <label
                   htmlFor="firstname"

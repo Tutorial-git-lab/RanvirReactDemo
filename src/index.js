@@ -32,6 +32,8 @@ import CompanyReport from "./pages/CompanyReport";
 import FeedBackReport from "./pages/FeedBackReport";
 import JobSeekerRegistration from "./pages/JobSeekerRegister";
 import CompanyRegister from "./pages/CompanyRegister";
+import AssignRole from "./pages/AssignRole";
+import ChangeRole from "./pages/ChangeRole";
 
 export default function App() {
   return (
@@ -66,6 +68,8 @@ export default function App() {
                 <Route path="jobseekerreport" element={<JobSeekerReport />} />
                 <Route path="companyreport" element={<CompanyReport />} />
                 <Route path="feedbackreport" element={<FeedBackReport />} />
+                <Route path="assignrole" element={<AssignRole />} />
+                <Route path="changerole" element={<ChangeRole />} />
                 <Route path="logout" element={<Logout />} />
               </Route>
 

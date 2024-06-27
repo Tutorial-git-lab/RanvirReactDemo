@@ -8,7 +8,7 @@ export default function JobSeekerReport() {
             <h5 className="text-center mb-2 my-0 ">Job Seeker Report</h5>
           </div>
 
-          <div className="container border">
+          <div className="container ">
             <div className="form-group d-flex p-1 mb-1 row">
               <label htmlFor="select" className="form-label col-4 text-end">
                 <strong>Select Job Seeker:</strong>

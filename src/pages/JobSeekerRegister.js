@@ -5,11 +5,11 @@ export default function JobSeekerRegistration() {
     <div className="d-flex align-item-center justify-content-center w-80 vh-40 ">
       <div className="form_container rounded bg-white w-80 my-1">
         <div className="row">
-          <div className="d-flex justify-content-center border">
+          <div className="d-flex justify-content-center ">
             <h5 className="text-center mb-3 my-3 ">Job Seeker Registration</h5>
           </div>
 
-          <div className="col-6 d-flex-col p-3 border ">
+          <div className="col-6 d-flex-col p-3  ">
             <div className="form-group d-flex mb-2 row">
               <label htmlFor="firstName" className="form-label col-4 text-end">
                 <strong>First Name:</strong>
@@ -80,7 +80,7 @@ export default function JobSeekerRegistration() {
             </div>
           </div>
 
-          <div className="col-6 d-flex-col p-3 border">
+          <div className="col-6 d-flex-col p-3 ">
             <div className="form-group d-flex mb-2 row">
               <label htmlFor="degree" className="form-label col-4 text-end">
                 <strong>Degree:</strong>

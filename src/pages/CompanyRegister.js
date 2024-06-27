@@ -4,11 +4,11 @@ export default function CompanyRegister() {
     <div className="d-flex align-item-center justify-content-center w-80 vh-40 ">
       <div className="form_container rounded bg-silver w-80 my-1 ">
         <div className="row">
-          <div className="d-flex justify-content-center border">
+          <div className="d-flex justify-content-center ">
             <h5 className="text-center mb-3 my-3 "> Company Registration</h5>
           </div>
 
-          <div className="col-6 d-flex-col p-2 border">
+          <div className="col-6 d-flex-col p-2 ">
             <div className="form-group d-flex mb-2 my-3 row">
               <label
                 htmlFor="companyName"
@@ -85,7 +85,7 @@ export default function CompanyRegister() {
             </div>
           </div>
 
-          <div className="col-6 d-flex-col p-2 border">
+          <div className="col-6 d-flex-col p-2 ">
             <div className="form-group d-flex mb-2 my-3 row ">
               <label htmlFor="email" className="form-label col-4 text-end ">
                 <strong>Email Address:</strong>

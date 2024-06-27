@@ -88,8 +88,8 @@ const CompanyLayout = () => {
                       </a>
                     </div>
                     <div
-                      className={`text-center my-2  ${
-                        activeKey === "postedjob" ? "bg-warning" : ""
+                      className={`text-center my-2 mx-5  ${
+                        activeKey === "postedjob" ? "bg-warning " : ""
                       }`}
                     >
                       <a href="#" onClick={() => setActiveKey("postedjob")}>

@@ -4,6 +4,8 @@ import CompanyReport from "./CompanyReport";
 import FeedBackReport from "./FeedBackReport";
 import Logout from "./Logout";
 import { useState } from "react";
+import AssignRole from "./AssignRole";
+import ChangeRole from "./ChangeRole";
 
 const AdminLayout = () => {
   const [activeKey, setActiveKey] = useState("jobseekerreport");
@@ -16,6 +18,10 @@ const AdminLayout = () => {
         return <CompanyReport />;
       case "feedbackreport":
         return <FeedBackReport />;
+      case "assignrole":
+        return <AssignRole />;
+      case "changerole":
+        return <ChangeRole />;
       case "/":
         return <Logout />;
     }
@@ -47,13 +53,12 @@ const AdminLayout = () => {
                     <h5>Welcome Admin</h5>
                   </div>
 
-                  <div className="my-3 ">
+                  <div className=" my-2 p-0">
                     <div
-                      className={`text-center my-0  ${
+                      className={`text-center my-2 mx-5 ${
                         activeKey === "jobseekerreport" ? "bg-warning" : ""
                       }`}
                     >
-                      <div className="my-1 "></div>
                       <a
                         href="#"
                         onClick={() => setActiveKey("jobseekerreport")}
@@ -72,6 +77,16 @@ const AdminLayout = () => {
                         onClick={() => setActiveKey("feedbackreport")}
                       >
                         FeedBack Report
+                      </a>
+                    </div>
+                    <div className="text-center my-2 ">
+                      <a href="#" onClick={() => setActiveKey("assignrole")}>
+                        Assign Role
+                      </a>
+                    </div>
+                    <div className="text-center my-2 ">
+                      <a href="#" onClick={() => setActiveKey("changerole")}>
+                        Change Role
                       </a>
                     </div>
                     <div className="text-center my-2 ">

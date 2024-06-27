@@ -4,11 +4,11 @@ export default function PostNewJob() {
     <div className="d-flex align-item-center justify-content-center w-80 vh-40 ">
       <div className="form_container rounded bg-white w-80 my-1 p-1">
         <div className="row">
-          <div className="d-flex justify-content-center border">
+          <div className="d-flex justify-content-center ">
             <h5 className="text-center mb-1 my-1 ">Post New Job</h5>
           </div>
 
-          <div className="border">
+          <div className="#">
             <div className=" d-flex my-1 p-1 row">
               <label htmlFor="companyName" className="col-4 text-end ">
                 <strong>Job Title:</strong>
